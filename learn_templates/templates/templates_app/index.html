@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "templates_app/base.html" %}
+  {% block body_block %}
+  {% load my_extras %}
+    <h1>Welcome To Index</h1>
+    <h2>This is the index.html page on top of base.html</h2>
+    <!-- Random context variables... -->
+    <h1>{{ text|cutter:'hello' }}</h1>
+    <br>
+    <h1>{{ number|add:"99" }}</h1>
+{% endblock %}
